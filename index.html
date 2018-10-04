@@ -12,8 +12,8 @@
 </head>
 <body>
   <h1 id="title">Survey Form</h1>
-  <div class="container">
-    <p id="description">Let us know what Content Management System (CMS) application are you using.</p>
+  <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+    <p id="description">Let us know what CMS (Content Management System) application you are using.</p>
     <form id="survey-form">
       <div class="row">
         <div class="col col-left"><label for="name" id="name-label">* Name:</label></div>
@@ -45,33 +45,33 @@
       <div class="row">
         <div class="col col-left"><label for="dropdown" id="requirement-label">What is the first technical requirement do you have in mind when choosing a CMS?</label></div>
         <div class="col col-right">
-          <div><input type="radio" name="requirement" value="os"> <label for="" id="">OS</label></div>
-          <div><input type="radio" name="requirement" value="web server"> <label for="" id="">Web Server</label></div>
-          <div><input type="radio" name="requirement" value="programming language"> <label for="" id="">Programming Language</label></div>
-          <div><input type="radio" name="requirement" value="database"> <label for="" id="">Database</label></div>
-          <div><input type="radio" name="requirement" value="application server"> <label for="" id="">Application Server</label></div>
-          <div><input type="radio" name="requirement" value="license"> <label for="" id="">License</label></div>
+          <div><input type="radio" id="os" name="requirement" value="os"> <label for="os">OS</label></div>
+          <div><input type="radio" id="web-server" name="requirement" value="web server"> <label for="web-server">Web Server</label></div>
+          <div><input type="radio" id="programming-language" name="requirement" value="programming language"> <label for="programming-language">Programming Language</label></div>
+          <div><input type="radio" id="database" name="requirement" value="database"> <label for="database">Database</label></div>
+          <div><input type="radio" id="application-server" name="requirement" value="application server"> <label for="application-server">Application Server</label></div>
+          <div><input type="radio" id="license" name="requirement" value="license"> <label for="license">License</label></div>
         </div>
       </div>
       <div class="row">
         <div class="col col-left"><label for="dropdown" id="dropdown-label">Which features are more relevant when choosing a cms? (Check all that apply):</label></div>
         <div class="col col-right">
-          <div><input type="checkbox" name="name" value="os"> <label for="" id="">Security</label></div>
-          <div><input type="checkbox" name="name" value="web server"> <label for="" id="">Performance</label></div>
-          <div><input type="checkbox" name="name" value="programming language"> <label for="" id="">Support</label></div>
-          <div><input type="checkbox" name="name" value="database"> <label for="" id="">Built-In Features</label></div>
-          <div><input type="checkbox" name="name" value="application server"> <label for="" id="">Management</label></div>
-          <div><input type="checkbox" name="name" value="license"> <label for="" id="">Ease Of Use</label></div>
+          <div><input type="checkbox" id="security" name="feature" value="security"> <label for="security">Security</label></div>
+          <div><input type="checkbox" id="performance" name="feature" value="performance"> <label for="performance">Performance</label></div>
+          <div><input type="checkbox" id="support" name="feature" value="support"> <label for="support">Support</label></div>
+          <div><input type="checkbox" id="built-in-features" name="feature" value="built-in-features"> <label for="built-in-features">Built-In Features</label></div>
+          <div><input type="checkbox" id="management" name="feature" value="management"> <label for="management">Management</label></div>
+          <div><input type="checkbox" id="ease-of-use" name="feature" value="ease-of-use"> <label for="ease-of-use">Ease Of Use</label></div>
         </div>
       </div>
       <div class="row">
-        <div class="col col-left"><label for="" id="">Any comments?</label></div>
+        <div class="col col-left"><label for="comments">Any comments?</label></div>
         <div class="col col-right">
-          <textarea cols="50" rows="4">Enter your comment here...</textarea>
+          <textarea id="comments" cols="70" rows="4">Enter your comment here...</textarea>
         </div>
       </div>
       <div class="row">
-        <div class="col"><button type="submit" class="btn btn-primary" id="submit">Submit</button></div>
+        <div class="col d-flex justify-content-center"><button type="submit" class="btn btn-primary" id="submit">Submit</button></div>
       </div>
     </form>
   </div>

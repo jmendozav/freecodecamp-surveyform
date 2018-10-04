@@ -1,12 +1,10 @@
 body {
-  background-color: #99CCFF;
+  background-color: #b4e2ff;
 }
 
-.container {
-  padding: 2em 10em;
-  border-radius: 1em;
-
-  background-color: #eee;;
+h1 {
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 .row {
